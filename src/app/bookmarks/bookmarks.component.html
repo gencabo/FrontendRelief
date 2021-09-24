@@ -1,0 +1,23 @@
+
+ <div class="container  width= 10">
+
+<button class="btn btn-primary"(click)="transform()" >Bookmark</button>
+
+<button class="btn btn-warning" (click)="show=!show">Show Bookmark</button>
+<div class="row">
+    <div class="col">
+      <table class="table table-striped" *ngIf="show">
+        <thead>
+          <tr>
+            <th>BookMarks</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+           <td>{{bookmarks}} </td> 
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

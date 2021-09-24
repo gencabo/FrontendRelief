@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container ">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Inserta el videoId (lo que sigue a 'https://www.youtube.com/watch?v=' dentro de la URL)" 
+        aria-label="Inserta el videoId(lo que sigue a 'https://www.youtube.com/watch?v=' dentro de la URL)" name= "urlBusqueda" [(ngModel)]= "urlBusqueda">
+        </form>
+    </div>
+  </nav>
+
+  <app-video-view [urlplay]= "urlBusqueda"></app-video-view>
